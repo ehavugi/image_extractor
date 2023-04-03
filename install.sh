@@ -1,2 +1,2 @@
 pip install - requirements.txt
-python main.py
+python3 main.py

@@ -81,6 +81,8 @@ def extract(file=file):
          print(image_ext)
 
 win = Tk()
+win.title("Image Extractor")
+win.iconbitmap("images/icon.ico")
 
 # Set the geometry of tkinter frame
 win.geometry("700x350")
@@ -102,7 +104,7 @@ def extract_image():
    extract(file)
 
 # Create a Button
-ttk.Button(win, text="Browse", command=open_file).pack(pady=20)
+ttk.Button(win, text="Select file", command=open_file).pack(pady=20)
 
 B = Button(win, text ="Extract Images to folder", command = extract_image)
 B.pack()
